@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ai_trading_bot"
+version = "0.1.0"
+description = "AI-based Trading Bot for Analyzing and Executing Trades"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.2.4"
+numpy = "^1.20.2"
+scikit-learn = "^0.24.2"
+joblib = "^1.0.1"
+requests = "^2.25.1"
+schedule = "^1.1.0"
+logging = "^0.4.9.6"  # Python's built-in logging does not need to be separately installed, can be omitted
+beautifulsoup4 = "^4.9.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py37', 'py38']
+
+[tool.isort]
+profile = "black"
